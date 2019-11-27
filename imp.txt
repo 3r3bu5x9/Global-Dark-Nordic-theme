@@ -1,0 +1,37 @@
+def ispresent(a,b):#a's presence in b
+    c = 0
+    for i in range(len(b)):
+        if a == b[i]:
+            c += 1
+            break
+    if c == 0:
+        return False
+    else:
+        return True
+
+def findsubseq(l,K,x):
+    temp = l[:]
+    for i in range(len(l)):
+        if len(temp) == K:
+            if ispresent(temp,x) == False:
+                x += [temp]
+            return 
+        else:
+            findsubseq(l[:i]+l[i+1:],K,x)
+
+
+
+
+
+def permute(l):
+    permuted = []
+    if len(l) == 1:
+        return l
+    else:
+        for i in range(0,len(l)):
+            for j in permute(l[:i] + l[i+1:]):
+                permuted += [l[i] +' '+ j]
+    return permuted
+
+
+

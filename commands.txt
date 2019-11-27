@@ -1,0 +1,140 @@
+  *PYTHON COMMANDS/IMPORTANT CODES*
+@ #- octothrope is used for writing comments
+@ advice- read code backwards while error checking
+@ printing multiple(different types) of words- print('text1',var,'text2')
+@ appending strings- string = string1 + string2
+@ embedding variables inside strings- print(f"string1 {var} string2") #here f tells python that strings needs formating and put the var in there
+  the f-string - string = f"text {var} text"
+  f doesnot need to be written if parenthesis is kept empty
+  textvar.format(var/text) puts var/text in the string defined in textvar = "generictext {}"
+    ex-
+    
+    age = 22
+    first_name = 'debasis'
+    last_name = ' buxy'
+    name = first_name + last_name
+    alt_name = "dark inferno"
+    text = "my alternate name is {}"  #f not written as parenthesis is empty
+    print(f"My name is {name} and age is {age} and {text.format(alt_name)}")
+
+    output-
+    My name is debasis buxy and age is 22 and my alternate name is dark inferno
+    
+@ print(char * 10) prints the char 10 times
+@ \n - new line, \t - tab, \\- single slash, """ - triple quote - prints multiline texts exactly as they are typed no need to use new line in triple quote
+
+	print("""
+	this is cool
+	aint it?
+	""")
+	
+	output-
+	this is cool
+	aint it?
+	
+@ var = input("text" ) - takes input from the user while displaying the text and stores in the var
+@ from package import module - syntax for importing module
+@ argv module from sys takes info from the arguments given while running from the terminal and var1,var2,...etc = argv unpacks the required info. ex-
+
+	from sys import argv
+	var1, var2 = argv
+	print(
+	    f"""
+	    pass1 = {var1}
+	    pass2 = {var2}
+	    """
+	    )
+	output-
+	pass1 = test.py
+	pass2 = gen1
+	
+@ reading files- ex-
+
+	from sys import argv
+	filename, doc = argv
+	text = open(doc) #creates an instance(file object) in the script that stores the file
+	print(text.read()) #reads the contents of the file
+
+	output-
+	$python3 test.py test_doc.txt
+	Lorem Ipsum
+	Lorem Ipsum
+	Lorem Ipsum
+	Lorem Ipsum
+	Lorem Ipsum
+
+@ • close – Closes the file. Like File->Save.. in your editor.
+  • read – Reads the contents of the file. You can assign the result to a variable.
+  • readline – Reads just one line of a text file.
+  • truncate – Empties the file. Watch out if you care about the file.
+  • write('stuff') – Writes ”stuff” to the file
+  • seek(0) – Move the read/write location to the beginning of the file.
+ @ ctrl+c causes keyboard interrupt while the script is running- takes the script out of the "try block"
+ @ open(file,'w') - creates file object in write mode
+   similarly 'a' is append mode and 'r' is read mode
+@ PROJECT 1.0
+
+	from sys import argv
+	filename, doc = argv
+	print(
+	    f"""
+	    ***PRIMITIVE TEXT EDITOR***
+	    File to be edited: {doc}
+	    Press Ctrl+c to abort the process or Enter to resume
+	    """
+	)
+	input()
+	print(f"""
+	    Press 
+	    'o' to show contents
+	    'c' to clear
+	    'i' to insert line
+	    'x' to exit
+	    """
+	    )
+	while True:
+	    prompt = input("\n==> ")
+
+	    if prompt == 'o':
+	        text = open(doc,'r')
+	        content = text.read()
+	        print(f"\nOpening...\n{content}")
+
+	    elif prompt == 'c':
+	        text = open(doc,'w')
+	        text.truncate()#can be ignored
+	        print("\nFile cleared")
+
+	    elif prompt == 'i':
+	        text = open(doc,'a')
+	        text.write(input("\nEnter text: "))
+	        print("\nLine added")
+
+	    elif prompt == 'x':
+	        print("\nExiting...")
+	        text.close()
+	        break
+
+	    else:
+	        print("\nWrong input try again :)")
+
+	Inference:
+	1.read() is a read mode function
+	2.write() is a write/append mode function
+	3.mode of the opened file has to be changed to use the respective functions
+	4.opening in write mode auto-clears the file 
+@ #####useful commands for command line: 
+  echo "text" > file.ext - writes string in the file
+  cat file.ext - prints all the text in the file
+@ def func_name(arg):   for defining a function
+@ python one liner commands: ord('character') - gives the ascii value of the character
+							 chr(asciivalue) - gives the character to which the ascii vaue is mapped
+@ problem with encoding - different languages had different character maps making it hard to use multiple languages in typing
+@ encoding- sequence of 0s and 1s(8 of them/ 8 bit long) -> represents a bigger number -> maps to a character in the ascii table
+  solution: unicode - universal encoding- 32 bits long so it can represent 2^32 characters
+
+sys.argv
+if line:
+encode()
+decode()
+strip()
