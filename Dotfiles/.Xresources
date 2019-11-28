@@ -4,18 +4,18 @@ URxvt.scrollBar: false
 
 
 !font!
-URxvt.font:     xft:Source Code Variable:medium:size=11:antialias=true
-URxvt.boldFont: xft:Source Code Variable:bold:size=11:antialias=true
+URxvt.font:     xft:Source Code Variable:medium:size=10:antialias=true
+URxvt.boldFont: xft:Source Code Variable:bold:size=10:antialias=true
 URxvt.letterSpace: -1 
 !special
 URxvt.foreground      : #74DBAC
 URxvt.foreground_bold : #CC92E7
 URxvt.cursorColor     : #74DBAC
-URxvt.background      : #1B1D24
+URxvt.background      : #111217
 
 !black
-URxvt.color0  : #1B1D24
-URxvt.color8  : #1B1D24
+URxvt.color0  : #424B54
+URxvt.color8  : #424B54
 
 !red
 URxvt.color1  : #bf616a
