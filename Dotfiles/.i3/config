@@ -11,7 +11,7 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # window border
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 
 bindsym $mod+Shift+m exec i3-scrot
 
@@ -41,7 +41,7 @@ bindsym $mod+Shift+q kill
 
 
 # launch categorized menu
-bindsym $mod+z exec --no-startup-id morc_menu
+#bindsym $mod+z exec --no-startup-id morc_menu
 bindsym $mod+d exec --no-startup-id dmenu_run
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -109,8 +109,8 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+Shift+v split h;exec notify-send 'tile horizontally'
-bindsym $mod+v split v;exec notify-send 'tile vertically'
+bindsym $mod+z split h;exec notify-send 'tile horizontally'
+bindsym $mod+x split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
@@ -329,9 +329,30 @@ set_from_resource $term_color15    color15
 
 
 bar {
+   # font pango:DejaVu Sans Mono, FontAwesome 12
+	font pango:Source Code Variable Medium 11
+    position top
+	i3bar_command i3bar -t
+	status_command /usr/bin/i3status-rs /home/debasis/.i3/status.toml
+tray_output none
+	#set $transparent #0000006f
+	set $transparent #2E34406B
+    colors {
 	
-	status_command i3status
-	position top
+        separator #666666
+#        background #989EB5
+	background $transparent
+        statusline #D8DEE9
+        focused_workspace #0088CC #0088CC #ffffff
+        active_workspace #333333 #333333 #ffffff
+        inactive_workspace #333333 #333333 #888888
+        urgent_workspace #2f343a #900000 #ffffff
+    }
+}
+
+#bar {
+#	status_command i3status
+#	position top
 
 # please set your primary output first. #Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
@@ -339,22 +360,22 @@ bar {
 
 #	bindsym button4 nop
 #	bindsym button5 nop
-   font xft:Source Code Variable Medium 11
-	strip_workspace_numbers yes
+#   font xft:Source Code Variable Bold 11
+#	strip_workspace_numbers yes
 
-   colors {
-        background #1A1418
-        statusline #2EB398
-        separator  #1B1D24
+#   colors {
+#        background #2E3440
+#        statusline #2EB398
+#        separator  #1B1D24
 
     #                  border  backgr. text
-        focused_workspace  #F9FAF9 #16A085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
-        binding_mode       #16A085 #2C2C2C #F9FAF9
-        urgent_workspace   #16A085 #FDF6E3 #E5201D
-    }
-}
+#        focused_workspace  #F9FAF9 #16A085 #292F34
+#        active_workspace   #595B5B #353836 #FDF6E3
+#        inactive_workspace #595B5B #222D31 #EEE8D5
+#        binding_mode       #16A085 #2C2C2C #F9FAF9
+#        urgent_workspace   #16A085 #FDF6E3 #E5201D
+ #   }
+#}
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
@@ -374,7 +395,7 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 14
+gaps inner 15
 gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.

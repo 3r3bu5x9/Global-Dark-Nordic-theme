@@ -1,46 +1,49 @@
-
+!xrdb -merge ~/.Xresources!
 !SCrollbar!
+!URxvt.background      : #111217!
 URxvt.scrollBar: false
-
+URxvt.internalBorder:10
 
 !font!
 URxvt.font:     xft:Source Code Variable:medium:size=10:antialias=true
 URxvt.boldFont: xft:Source Code Variable:bold:size=10:antialias=true
 URxvt.letterSpace: -1 
-!special
-URxvt.foreground      : #74DBAC
-URxvt.foreground_bold : #CC92E7
-URxvt.cursorColor     : #74DBAC
-URxvt.background      : #111217
 
-!black
-URxvt.color0  : #424B54
-URxvt.color8  : #424B54
+! special
+URxvt.foreground      : #2E3440
+URxvt.foreground_bold : #5A728A
+URxvt.cursorColor     : #81A1C1
+URxvt.background      : #D1D8E4
 
-!red
-URxvt.color1  : #bf616a
-URxvt.color9  : #bf616a
+! black
+URxvt.color0:       #2E3440
+URxvt.color8:       #2E3440
 
-!green
-URxvt.color2  : #a3be8c
-URxvt.color10 : #16A085
+! red
+URxvt.color1:       #E36464
+URxvt.color9:       #E36464
 
-!yellow
-URxvt.color3  : #ebcb8b
-URxvt.color11 : #ebcb8b
+! green
+URxvt.color2  : #3AA697
+URxvt.color10 : #3C665C
 
-!blue
-URxvt.color4  : #8fa1b3
-URxvt.color12 : #8fa1b3
+! yellow
+URxvt.color3:       #aec795
+URxvt.color11:      #aec795
 
-!magenta
-URxvt.color5  : #b48ead
-URxvt.color13 : #b48ead
+! blue
+URxvt.color4:       #81A1C1
+URxvt.color12:      #81A1C1
 
-!cyan
-URxvt.color6  : #96b5b4
-URxvt.color14 : #96b5b4
+! magenta
+URxvt.color5:       #c795ae
+URxvt.color13:      #c795ae
 
-!white
-URxvt.color7  : #c0c5ce
-URxvt.color15 : #74DBAC
+! cyan
+URxvt.color6:       #95aec7
+URxvt.color14:      #95aec7
+
+! white
+URxvt.color7:       #3E5173
+URxvt.color15:      #3E5173
+
