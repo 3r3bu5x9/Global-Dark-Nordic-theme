@@ -2,6 +2,10 @@ theme = "slick"
 icons = "awesome"
 
 [[block]]
+block = "focused_window"
+max_width = 45
+
+[[block]]
 block = "net"
 ssid = true
 ip = true
@@ -29,15 +33,21 @@ block = "cpu"
 interval = 1
 
 [[block]]
+block = "time"
+interval = 1
+format = "%a %d.%m.%y %I:%M:%S %P"
 
 
 [[block]]
 block = "sound"
 
 [[block]]
-block = "time"
-interval = 60
-format = "%a %d/%m %R"
+block = "xrandr"
+icons = true
+resolution = false
+interval = 2
+
 [[block]]
 block = "battery"
 interval = 10
+format = "{percentage}%"

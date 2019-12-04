@@ -10,10 +10,10 @@ URxvt.boldFont: xft:Source Code Variable:bold:size=10:antialias=true
 URxvt.letterSpace: -1 
 
 ! special
-URxvt.foreground      : #2E3440
+URxvt.foreground      : #81A1C1
 URxvt.foreground_bold : #5A728A
 URxvt.cursorColor     : #81A1C1
-URxvt.background      : #D1D8E4
+URxvt.background      : #2C313B
 
 ! black
 URxvt.color0:       #2E3440
@@ -25,7 +25,7 @@ URxvt.color9:       #E36464
 
 ! green
 URxvt.color2  : #3AA697
-URxvt.color10 : #3C665C
+URxvt.color10 : #73FFAD
 
 ! yellow
 URxvt.color3:       #aec795
@@ -44,6 +44,6 @@ URxvt.color6:       #95aec7
 URxvt.color14:      #95aec7
 
 ! white
-URxvt.color7:       #3E5173
-URxvt.color15:      #3E5173
+URxvt.color7:       #99A1C9
+URxvt.color15:      #99A1C9
 

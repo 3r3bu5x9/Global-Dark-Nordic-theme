@@ -42,7 +42,7 @@ bindsym $mod+Shift+q kill
 
 # launch categorized menu
 #bindsym $mod+z exec --no-startup-id morc_menu
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show run
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
@@ -330,13 +330,13 @@ set_from_resource $term_color15    color15
 
 bar {
    # font pango:DejaVu Sans Mono, FontAwesome 12
-	font pango:Source Code Variable Medium 11
+	font pango:Source Code Variable Medium 10
     position top
 	i3bar_command i3bar -t
 	status_command /usr/bin/i3status-rs /home/debasis/.i3/status.toml
 tray_output none
 	#set $transparent #0000006f
-	set $transparent #2E34406B
+	set $transparent #00000000
     colors {
 	
         separator #666666
@@ -395,8 +395,8 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 15
-gaps outer 0
+gaps inner 9
+gaps outer -1
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
