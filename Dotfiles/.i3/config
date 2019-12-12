@@ -63,7 +63,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec chromium
+bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+F4 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
@@ -330,7 +330,7 @@ set_from_resource $term_color15    color15
 
 bar {
    # font pango:DejaVu Sans Mono, FontAwesome 12
-	font pango:Source Code Variable Medium 10
+	font pango:Source Code Variable Semibold 9
     position top
 	i3bar_command i3bar -t
 	status_command /usr/bin/i3status-rs /home/debasis/.i3/status.toml
@@ -382,9 +382,9 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #556064 #74DBAC #80FFF9 #FDF6E3
-  client.focused_inactive #2F3D44 #16A085 #1ABC9C #454948
-  client.unfocused        #2F3D44 #16A085 #1ABC9C #454948
+  client.focused          #556064 #99A1C9 #80FFF9 #FDF6E3
+  client.focused_inactive #2F3D44 #637B94 #1ABC9C #454948
+  client.unfocused        #2F3D44 #637B94 #1ABC9C #454948
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
   client.placeholder      #000000 #0c0c0c #FFFFFF #000000 
 
@@ -395,7 +395,7 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 9
+gaps inner 10
 gaps outer -1
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.

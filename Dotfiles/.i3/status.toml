@@ -1,9 +1,13 @@
-theme = "slick"
-icons = "awesome"
 
+#[theme]
+theme = "solarized-dark"
+#[theme.overrides]
+
+#[icons]
+icons = "awesome"
 [[block]]
 block = "focused_window"
-max_width = 45
+max_width = 50
 
 [[block]]
 block = "net"
@@ -46,8 +50,10 @@ block = "xrandr"
 icons = true
 resolution = false
 interval = 2
-
+[[block]]
+block = "uptime"
 [[block]]
 block = "battery"
 interval = 10
 format = "{percentage}%"
+

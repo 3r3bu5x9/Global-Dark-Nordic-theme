@@ -1,0 +1,38 @@
+# Matrix operations
+- form_matrix(list,row,col) - creates matrix of rowxcol dimension from a list<br>
+- sm(M,name) - show matrix in goodlooking form also display name of the matrix<br>
+- filtermatrix(M) - converts numbers smaller than 10^-6 to 0 in a matrix(for more accurate rank calculations)<br>
+- minor(M,row,col) - finds minor of Mij<br>
+- determinant(M) - finds determinant of M using Laplace expansion<br>
+- transpose(M) - finds transpose of M<br>
+- inverse(M) - finds inverse of M<br>
+- product(A,B) - finds product of  A and B<br>
+- conjugatematrix(M) - finds conjugate of M<br>
+- dagger(M) - finds dagger of M<br>
+- trace(M) - finds the trace of M<br>
+- aresame(A,B) - checks equality of A and B, returns boolean<br>
+- Id(sign,n) - creates a nxn identity matrix<br>
+- isHermitian(M) - check if M is hermitian, returns 1,0,-1<br>
+- isUnitary(M) - check if M is unitary, returns boolean<br>
+- isSymmetric(M) - check if M is symmetric,returns 1,0,-1<br>
+- isOrthogonal(M) - check if M is orthogonal returns boolean<br>
+- add(A,B) - finds the sum of A and B <br>
+- Zero(row,col) - creates a rowxcol dimension zero matrix<br>
+- commutator(A,B) - finds the commutator of A and B<br>
+- norm(V) - finds norm of 1D matrix(vector)<br>
+- rank(M) - finds the rank of the matrix<br>
+- normaize(M) - normalizes a vector<br>
+- GS(M) - takes a matrix as input where the coloumns forms the set of vectors and returns dict of orthonormalized vectors<br>
+- zerocounter(l) - takes a list and returns the number of zeroes in it<br>
+- rowswitch(M,rowi,rowj) - ith row <-> jth row<br>
+- colswitch(M,coli,colj) - ith col <-> jth col<br>
+- rowmultiply(M,row,scalar) - ith row -> scalar * ith row<br>
+- rowadd(M,rowi,rowj,scalar) - ith row -> ith row + scalar * jth row<br>
+- REF(M) - reduces M to row echelon form using Gaussian elimination<br>
+- rank(M) - finds rank of M<br>
+- Cramersolve(M) - solves the simultaneous linear equations of the form Mx = b using, M is a matrix, b is a list<br>
+- GEsolve(M) - solves the simultaneous linear equations after reducing to row echelon form, M is the augmented matrix<br>
+- `LU(M) - decomposes M into a lower triangular matrix L and upper triangular matrix U<br>
+- `QR(M) - decomposes M to unitary Q and upper triangular R<br>
+- `Eigenval(M) - finds the eigenvalues if M via QR algorithm<br>
+- `Eigenvect(M) - finds the eigenvectord of M<br>

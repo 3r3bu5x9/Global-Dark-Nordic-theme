@@ -18,7 +18,7 @@ audio.high.cutoff.frequency=22050
 
 ##Applies scaling factor to both lorenz and ellipse visualizers. This is useful when the system audio is set
 #to a low volume.
-#visualizer.scaling.multiplier=1.0
+visualizer.scaling.multiplier=0.7
 
 #Configures the visualizers and the order they are in. Available visualizers are spectrum,lorenz,ellipse.
 #Defaults to spectrum,ellipse,lorenz
@@ -83,5 +83,5 @@ visualizer.ellipse.radius=2
 colors.override.terminal=false
 
 #Specifies the color scheme. The color scheme must be in ~/.config/vis/colors/ directory. Default is "colors"
-colors.scheme=rainbow
+colors.scheme=solard
 
