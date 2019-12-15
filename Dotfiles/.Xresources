@@ -1,43 +1,45 @@
 !xrdb -merge ~/.Xresources!
 !SCrollbar!
-!URxvt.background      : #111217!
+!URxvt.background      : #1E2327!
 URxvt.scrollBar: false
 URxvt.internalBorder:10
-
+URxvt.transparent: false 
+URxvt.shading:20
 !font!
-URxvt.font:     xft:Source Code Variable:size=9:antialias=true
+URxvt.font:     xft:Source Code Variable:Medium:size=9:antialias=true
 URxvt.boldFont: xft:Source Code Variable:Bold:size=9:antialias=true
 URxvt.letterSpace: -1
 
 ! special
-URxvt.foreground      : #0088CC
-URxvt.foreground_bold : #17A4D6
-URxvt.cursorColor     : #0088CC
-URxvt.background      : #073642
+URxvt.foreground      : #F67E7D
+URxvt.foreground_bold : #FF254F
+URxvt.cursorColor     : #F67E7D
+URxvt.background      : #1A1E21
 
 ! black
-URxvt.color0:       #073642
-URxvt.color8:       #191919
+URxvt.color0:       #1A1E21
+! terminal font
+URxvt.color8:       #FF79C6
 
 ! red
-URxvt.color1:       #E36464
-URxvt.color9:       #E36464
+URxvt.color1:       #FF405B
+URxvt.color9:       #FF405B
 
 ! green
-URxvt.color2  : #FF4B12
-URxvt.color10 : #CB4B16
+URxvt.color2  : #4EE176
+URxvt.color10 : #8D00E3
 
 ! yellow
-URxvt.color3:       #aec795
-URxvt.color11:      #aec795
+URxvt.color3:       #FEBB21
+URxvt.color11:      #FEBB21
 
 ! blue
-URxvt.color4:       #81A1C1
-URxvt.color12:      #81A1C1
+URxvt.color4:       #1580ED
+URxvt.color12:      #1580ED
 
 ! magenta
-URxvt.color5:       #c795ae
-URxvt.color13:      #c795ae
+URxvt.color5:       #B444B4
+URxvt.color13:      #B444B4
 
 ! cyan
 URxvt.color6:       #95aec7
@@ -45,5 +47,6 @@ URxvt.color14:      #95aec7
 
 ! white
 URxvt.color7:       #FFFFFF
-URxvt.color15:      #FFFFFF
+URxvt.color15:      #FF254F
 
+rofi.font: Source Code Variable Roman 9

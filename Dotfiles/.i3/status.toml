@@ -1,10 +1,19 @@
 
-#[theme]
-theme = "solarized-dark"
-#[theme.overrides]
-
-#[icons]
-icons = "awesome"
+[theme]
+name = "solarized-dark"
+[theme.overrides]
+idle_bg = "#8F9B97"
+idle_fg = "#1E2327"
+info_bg = "#1D495B"
+info_fg = "#8F9B97"
+good_bg = "#133A49"
+good_fg = "#CDBCA6"
+warning_bg = "#254C5D"
+warning_fg = "#8F9B97"
+critical_bg = "#ab4642"
+critical_fg = "#8F9B97"
+[icons]
+name = "awesome"
 [[block]]
 block = "focused_window"
 max_width = 50

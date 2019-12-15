@@ -64,12 +64,12 @@ bindsym $mod+Ctrl+m exec pavucontrol
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec firefox
-bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F4 exec ranger
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
+bindsym $mod+F3 exec thunar
+bindsym $mod+F1 exec gedit
+#bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
-bindsym $mod+t exec --no-startup-id pkill compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b
+bindsym $mod+t exec --no-startup-id pkill picom
+bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 #bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -343,10 +343,10 @@ tray_output none
 #        background #989EB5
 	background $transparent
         statusline #D8DEE9
-        focused_workspace #0088CC #0088CC #ffffff
+        focused_workspace #0088CC #133A49 #ffffff
         active_workspace #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
-        urgent_workspace #2f343a #900000 #ffffff
+        inactive_workspace #333333 #8F9B97 #1A1E21
+        urgent_workspace #2f343a #FF254F #ffffff
     }
 }
 
@@ -395,8 +395,8 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 10
-gaps outer -1
+gaps inner 12
+gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
