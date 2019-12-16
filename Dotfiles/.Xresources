@@ -6,18 +6,18 @@ URxvt.internalBorder:10
 URxvt.transparent: false 
 URxvt.shading:20
 !font!
-URxvt.font:     xft:Source Code Variable:Medium:size=9:antialias=true
-URxvt.boldFont: xft:Source Code Variable:Bold:size=9:antialias=true
+URxvt.font:     xft:Source Code Variable:Roman:size=9:antialias=true
+URxvt.boldFont: xft:Source Code Variable:Medium:size=9:antialias=true
 URxvt.letterSpace: -1
 
 ! special
-URxvt.foreground      : #F67E7D
+URxvt.foreground      : #646669
 URxvt.foreground_bold : #FF254F
 URxvt.cursorColor     : #F67E7D
-URxvt.background      : #1A1E21
+URxvt.background      : #1E2327
 
 ! black
-URxvt.color0:       #1A1E21
+URxvt.color0:       #1E2327
 ! terminal font
 URxvt.color8:       #FF79C6
 
