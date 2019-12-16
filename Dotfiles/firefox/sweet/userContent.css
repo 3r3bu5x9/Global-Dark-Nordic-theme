@@ -31,8 +31,11 @@
   
 .prefs-button button:hover, .prefs-button button:focus {
     background-color: #1a1e21 !important; }	
+ 
+ .contentSearchSuggestionTable {display: none !important;}
 
 }
+
 :root {
 	
     --in-content-border-active: #FF4642 !important;
