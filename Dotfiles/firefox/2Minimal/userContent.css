@@ -1,0 +1,68 @@
+/* Removes white loading page */
+
+@-moz-document url(about:blank), url(about:newtab), url(about:home) {
+    html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
+      background: #0F1011 !important;
+    }
+  }
+  
+
+  /* Hide scrollbar */
+/*  
+  :root{
+    scrollbar-width: none !important;
+  }
+  }
+  
+  @-moz-document url(about:privatebrowsing) { 
+  
+  :root{
+    scrollbar-width: none !important;
+  }
+  }
+ */ 
+  
+  @-moz-document url("about:home"),url(about:preferences),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
+  body{color:#e1e1e1!important;background-color:#0F1011!important;--newtab-search-icon: transparent !important;}
+  a,a:visited,a:hover{color:#0F1011!important}
+	#newtab-search-text {
+	background-color: #0F1011 !important;
+	font-size: 18px !important;
+	color: #7A46DB !important;
+	box-shadow: none !important;
+	text-align: center !important;
+	border:none !important;
+		}
+
+.search-wrapper input {
+    --newtab-textbox-focus-boxshadow: none !important;
+    padding-left: 20px !important;
+   	padding-inline-end: 13px !important;
+  }
+  
+
+.wordmark {display:none !important;}
+.logo{
+					align-items: center!important;
+					display: grid!important;
+					justify-content: center!important;}
+.search-button{background:none !important;}
+
+.prefs-button button {fill: #7A46DB !important;}
+  
+.prefs-button button:hover, .prefs-button button:focus {
+    background-color:  #0F1011 !important; }	
+ 
+ .contentSearchSuggestionTable {display: none !important;}
+ 
+
+}
+
+:root {
+	
+    --in-content-border-active: #533291 !important;
+    --in-content-border-active-shadow: none !important;
+    --in-content-page-background: transparent !important;
+        background-color: rgba(0,0,0, 0.0) !important;
+}
+

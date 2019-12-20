@@ -6,20 +6,20 @@ URxvt.internalBorder:10
 URxvt.transparent: false 
 URxvt.shading:20
 !font!
-URxvt.font:     xft:Source Code Variable:Roman:size=9:antialias=true
+URxvt.font:     xft:Source Code Variable:Medium:size=9:antialias=true
 URxvt.boldFont: xft:Source Code Variable:Medium:size=9:antialias=true
 URxvt.letterSpace: -1
 
 ! special
-URxvt.foreground      : #646669
+URxvt.foreground      : #CECECE
 URxvt.foreground_bold : #FF254F
-URxvt.cursorColor     : #F67E7D
-URxvt.background      : #1E2327
+URxvt.cursorColor     : #32254E
+URxvt.background      : #0F1011
 
 ! black
-URxvt.color0:       #1E2327
+URxvt.color0:       #0F1011
 ! terminal font
-URxvt.color8:       #FF79C6
+URxvt.color8:       #0F1011
 
 ! red
 URxvt.color1:       #FF405B
@@ -27,7 +27,7 @@ URxvt.color9:       #FF405B
 
 ! green
 URxvt.color2  : #4EE176
-URxvt.color10 : #8D00E3
+URxvt.color10 : #7044C4
 
 ! yellow
 URxvt.color3:       #FEBB21

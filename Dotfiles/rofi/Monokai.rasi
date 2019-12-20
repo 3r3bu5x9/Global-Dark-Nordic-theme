@@ -24,7 +24,7 @@
     normal-background:           #1A1E21;
     lightfg:                     rgba ( 88, 104, 117, 100 % );
     selected-normal-background:  #F67E7D;
-    border-color:                @foreground;
+    border-color:                #151516;
     spacing:                     2;
     separatorcolor:              #8D00E3;
     urgent-background:           #1A1E21;
@@ -37,7 +37,7 @@
 }
 #window {
     background-color: @background;
-    border:           0;
+    border:           1;
     padding:          5;
 }
 #mainbox {

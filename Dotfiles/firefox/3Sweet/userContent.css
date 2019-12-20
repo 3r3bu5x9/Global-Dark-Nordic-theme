@@ -1,0 +1,47 @@
+
+
+@-moz-document url("about:home"),url(about:preferences),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
+  body{color:#e1e1e1!important;background-color:#1A1E21!important;--newtab-search-icon: transparent !important;}
+  a,a:visited,a:hover{color:#C50ED2!important}
+	#newtab-search-text {
+	background-color: #1A1E21 !important;
+	font-size: 18px !important;
+	color: #ff3646 !important;
+	box-shadow: none !important;
+	text-align: center !important;
+	border:none !important;
+		}
+
+.search-wrapper input {
+    --newtab-textbox-focus-boxshadow: none !important;
+    padding-left: 20px !important;
+   	padding-inline-end: 13px !important;
+  }
+  
+
+.wordmark {display:none !important;}
+.logo{
+					align-items: center!important;
+					display: grid!important;
+					justify-content: center!important;}
+.search-button{background:none !important;}
+
+.prefs-button button {fill: #8D00E2 !important;}
+  
+.prefs-button button:hover, .prefs-button button:focus {
+    background-color: #1a1e21 !important; }	
+ 
+ .contentSearchSuggestionTable {display: none !important;}
+ 
+
+}
+
+:root {
+	
+    --in-content-border-active: #FF4642 !important;
+    --in-content-border-active-shadow: none !important;
+    --in-content-page-background: transparent !important;
+        background-color: rgba(0,0,0, 0.0) !important;
+}
+
+
