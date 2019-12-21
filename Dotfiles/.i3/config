@@ -343,9 +343,9 @@ tray_output none
 #        background #989EB5
 	background $transparent
         statusline #D8DEE9
-        focused_workspace #0088CC #133A49 #ffffff
-        active_workspace #333333 #333333 #ffffff
-        inactive_workspace #333333 #8F9B97 #1A1E21
+        focused_workspace #F0294A #1E2327 #C16768
+        active_workspace #C16768 #C16768 #ffffff
+        inactive_workspace #C16768 #C16768 #1A1E21
         urgent_workspace #2f343a #FF254F #ffffff
     }
 }
@@ -369,7 +369,7 @@ tray_output none
 #        separator  #1B1D24
 
     #                  border  backgr. text
-#        focused_workspace  #F9FAF9 #16A085 #292F34
+#        focused_workspace  #F9FAF9 #1E2327 #292F34
 #        active_workspace   #595B5B #353836 #FDF6E3
 #        inactive_workspace #595B5B #222D31 #EEE8D5
 #        binding_mode       #16A085 #2C2C2C #F9FAF9

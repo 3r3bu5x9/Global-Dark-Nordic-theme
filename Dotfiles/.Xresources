@@ -7,17 +7,17 @@ URxvt.transparent: false
 URxvt.shading:20
 !font!
 URxvt.font:     xft:Source Code Variable:Medium:size=9:antialias=true
-URxvt.boldFont: xft:Source Code Variable:Medium:size=9:antialias=true
+URxvt.boldFont: xft:Source Code Variable:Bold:size=9:antialias=true
 URxvt.letterSpace: -1
 
 ! special
-URxvt.foreground      : #CECECE
-URxvt.foreground_bold : #FF254F
-URxvt.cursorColor     : #32254E
-URxvt.background      : #0F1011
+URxvt.foreground      : #F67E7D
+URxvt.foreground_bold : #F67E7D
+URxvt.cursorColor     : #FD4540
+URxvt.background      : #1E2327
 
 ! black
-URxvt.color0:       #0F1011
+URxvt.color0:       #1E2327
 ! terminal font
 URxvt.color8:       #0F1011
 
@@ -27,7 +27,7 @@ URxvt.color9:       #FF405B
 
 ! green
 URxvt.color2  : #4EE176
-URxvt.color10 : #7044C4
+URxvt.color10 : #F0294A
 
 ! yellow
 URxvt.color3:       #FEBB21
@@ -47,6 +47,6 @@ URxvt.color14:      #95aec7
 
 ! white
 URxvt.color7:       #FFFFFF
-URxvt.color15:      #FF254F
+URxvt.color15:      #FFFFFF
 
 rofi.font: Source Code Variable Roman 9

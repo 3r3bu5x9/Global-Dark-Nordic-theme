@@ -1,10 +1,10 @@
   @-moz-document url("about:home"),url(about:preferences),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
-  body{color:#e1e1e1!important;background-color:#0F1011!important;--newtab-search-icon: transparent !important;}
-  a,a:visited,a:hover{color:#0F1011!important}
+  body{color:#e1e1e1!important;background-color:#1E2327!important;--newtab-search-icon: transparent !important;}
+  a,a:visited,a:hover{color:#1E2327!important}
 	#newtab-search-text {
-	background-color: #0F1011 !important;
+	background-color: #1E2327 !important;
 	font-size: 18px !important;
-	color: #533291 !important;
+	color: #F67E7D !important;
 	box-shadow: none !important;
 	text-align: center !important;
 	border:none !important;
@@ -24,10 +24,10 @@
 					justify-content: center!important;}
 .search-button{background:none !important;}
 
-.prefs-button button {fill: #32254E !important;}
+.prefs-button button {fill: #F67E7D !important;}
   
 .prefs-button button:hover, .prefs-button button:focus {
-    background-color:  #0F1011 !important; }	
+    background-color:  #1E2327 !important; }	
  
  .contentSearchSuggestionTable {display: none !important;}
  
@@ -35,6 +35,7 @@
 }
 :root {
 	
-    --in-content-border-active: #533291 !important;
+    --in-content-border-active: #F67E7D !important;
     --in-content-border-active-shadow: none !important;
+    --in-content-page-background: transparent !important;
 }
