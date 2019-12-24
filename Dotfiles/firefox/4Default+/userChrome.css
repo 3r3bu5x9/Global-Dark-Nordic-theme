@@ -20,7 +20,7 @@ display : none !important;
 
 /* Toolbar buttons */
 .toolbarbutton-1 {
-    fill: #F0294A !important;
+    fill: #D0324C !important;
     background-color: #1E2327 !important;
 }
 
@@ -129,18 +129,17 @@ toolbarbutton.scrollbutton-down{ background-color: transparent !important;}
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]):not([multiselected]){ background-color: transparent !important }
 
-
-
-#nav-bar { /* Main Toolbar */
+/*Tabs below nav bar*/
+#nav-bar { 
   -moz-box-ordinal-group: 1 !important;
 }
-#PersonalToolbar { /* Bookmarks Toolbar */
+#PersonalToolbar { 
   -moz-box-ordinal-group: 2 !important;
 }
-#titlebar { /* Menu + Tab Bar */
+#titlebar { 
   -moz-box-ordinal-group: 3 !important;
 }
-/* Menu Bar on top */
+
 #navigator-toolbox{ 
   margin-top: 0px;
   padding-top:0px !important; 
@@ -150,3 +149,4 @@ toolbarbutton.scrollbutton-down{ background-color: transparent !important;}
   top: 0px;
 }
 
+/*#navigator-toolbox { --tabs-border-color: transparent !important; }*//* remove weird line*/
