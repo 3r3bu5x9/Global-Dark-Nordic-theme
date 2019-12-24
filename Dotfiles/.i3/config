@@ -52,6 +52,7 @@ bindsym $mod+d exec --no-startup-id rofi -show run
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id pa-applet
 exec --no-startup-id pulseeffects --gapplication-service
+exec --no-startup-id mpd
 
 bindsym $mod+Ctrl+m exec pavucontrol
 
@@ -117,9 +118,9 @@ bindsym $mod+q split toggle
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -290,7 +291,7 @@ exec --no-startup-id xfce4-power-manager
 # exec_always --no-startup-id sbxkb
 #exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+#exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
@@ -330,18 +331,18 @@ set_from_resource $term_color15    color15
 
 bar {
    # font pango:DejaVu Sans Mono, FontAwesome 12
-	font pango:Source Code Variable Semibold 9
+	font pango:Source Code Variable Semibold 8
     position top
-	i3bar_command i3bar -t
+#	i3bar_command i3bar -t
+	i3bar_command i3bar
 	status_command /usr/bin/i3status-rs /home/debasis/.i3/status.toml
 tray_output none
-	#set $transparent #0000006f
-	set $transparent #00000000
+#	set $transparent #00000000
     colors {
 	
         separator #666666
-#        background #989EB5
-	background $transparent
+        background #1E2327
+#	background $transparent
         statusline #D8DEE9
         focused_workspace #F0294A #1E2327 #C16768
         active_workspace #C16768 #C16768 #ffffff

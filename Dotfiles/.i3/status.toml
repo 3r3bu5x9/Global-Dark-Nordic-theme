@@ -48,8 +48,11 @@ interval = 1
 [[block]]
 block = "time"
 interval = 1
-format = "%a %d.%m.%y %I:%M:%S %P"
-
+format = "%a %d.%m.%y"
+[[block]]
+block = "time"
+interval = 1
+format = "%I:%M:%S %P"
 
 [[block]]
 block = "sound"
