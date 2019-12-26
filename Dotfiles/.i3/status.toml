@@ -1,17 +1,19 @@
 
 [theme]
-name = "solarized-dark"
+name = "bad-wolf"
 [theme.overrides]
-idle_bg = "#1E2327"
-idle_fg = "#F67E7D"
-info_bg = "#101214"
-info_fg = "#F0294A"
-good_bg = "#F04A66"
-good_fg = "#000000"
-warning_bg = "#101214"
-warning_fg = "#F0294A"
-critical_bg = "#101214"
-critical_fg = "#8F9B97"
+idle_bg = "#8A2234"
+idle_fg = "#000000"
+info_bg = "#A6001C"
+info_fg = "#000000"
+good_bg = "#000000"
+good_fg = "#FF0033"
+warning_bg = "#1A1E21"
+warning_fg = "#FF0015"
+critical_bg = "#D00426"
+critical_fg = "#000000"
+alternating_tint_bg = "#1A1E21"
+separator = ''
 [icons]
 name = "awesome"
 [[block]]

@@ -1,5 +1,5 @@
 song_status_format = "{%a - %t}"
-song_list_format = "{%a - %t} $R {%l}"
+song_list_format = "{$b%a$/b - $b%t$/b} $R {$b%l$/b}"
 song_window_title_format = "{%a - }{%t}|{%f}"
 
 user_interface = "classic"

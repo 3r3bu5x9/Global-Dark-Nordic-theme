@@ -82,7 +82,7 @@ tab
 {
     background-color: #1E2327 !important;
     font-weight: thin !important;
-    color : #F67E7D !important;
+    color : #B52A41 !important;
 }
 
 
@@ -90,7 +90,7 @@ tab
 {
     background-color: #1E2327 !important;
     font-weight: bold !important;
-    color : #F67E7D !important;
+    color : #B52A41 !important;
 }
 
 #nav-bar-customization-target {
@@ -107,7 +107,8 @@ tab
 	background-color: #1E2327 !important;
 	background: none !important;
 	border: none !important;
-	color : #F67E7D !important;
+	color : #BA2B43 !important;
+	font-weight: bold !important;
 }
 
 #urlbar:hover{

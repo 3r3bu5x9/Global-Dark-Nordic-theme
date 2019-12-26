@@ -4,10 +4,11 @@
 	#newtab-search-text {
 	background-color: #1E2327 !important;
 	font-size: 18px !important;
-	color: #F67E7D !important;
+	color: #D0324C !important;
 	box-shadow: none !important;
 	text-align: center !important;
 	border:none !important;
+	font-weight: bold !important;
 		}
 
 .search-wrapper input {
@@ -24,7 +25,7 @@
 					justify-content: center!important;}
 .search-button{background:none !important;}
 
-.prefs-button button {fill: #F67E7D !important;}
+.prefs-button button {fill: #D0324C !important;}
   
 .prefs-button button:hover, .prefs-button button:focus {
     background-color:  #1E2327 !important; }	

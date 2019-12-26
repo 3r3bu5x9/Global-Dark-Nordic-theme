@@ -33,7 +33,7 @@ font xft:Source Code Variable Medium 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -63,7 +63,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
+bindsym $mod+Ctrl+b exec termite -e 'bmenu'
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec thunar
 bindsym $mod+F1 exec gedit
@@ -281,7 +281,7 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
@@ -331,18 +331,18 @@ set_from_resource $term_color15    color15
 
 bar {
    # font pango:DejaVu Sans Mono, FontAwesome 12
-	font pango:Source Code Variable Semibold 8
-    position top
-#	i3bar_command i3bar -t
-	i3bar_command i3bar
+	font pango:Iosevka Medium 9
+#    position top
+	i3bar_command i3bar -t
+#	i3bar_command i3bar
 	status_command /usr/bin/i3status-rs /home/debasis/.i3/status.toml
 tray_output none
-#	set $transparent #00000000
+	set $transparent #00000000
     colors {
 	
         separator #666666
-        background #1E2327
-#	background $transparent
+#        background #1E2327
+	background $transparent
         statusline #D8DEE9
         focused_workspace #F0294A #1E2327 #C16768
         active_workspace #C16768 #C16768 #ffffff

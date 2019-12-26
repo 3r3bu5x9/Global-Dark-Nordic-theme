@@ -1,4 +1,19 @@
 !xrdb -merge ~/.Xresources!
+
+
+
+! Font options - ~/.fonts.conf seems to override this
+! Resolution for Xft in dots per inch (e.g. 96)
+Xft.dpi:       96
+! Type of subpixel antialiasing (none, rgb, bgr, vrgb or vbgr)
+Xft.rgba:      rgba
+Xft.antialias: 1
+!Xft.hinting:   1
+!Xft.autohint:  0
+! What degree of hinting to use (hintnone, hintslight, hintmedium, or hintfull)
+!Xft.hintstyle: hintslight
+
+
 !SCrollbar!
 !URxvt.background      : #1E2327!
 URxvt.scrollBar: false
@@ -6,7 +21,7 @@ URxvt.internalBorder:10
 URxvt.transparent: false 
 URxvt.shading:20
 !font!
-URxvt.font:     xft:Source Code Variable:Medium:size=9:antialias=true
+URxvt.font:xft:Source Code Variable:Medium:size=9:antialias=true
 URxvt.boldFont: xft:Source Code Variable:Bold:size=9:antialias=true
 URxvt.letterSpace: -1
 
@@ -49,4 +64,5 @@ URxvt.color14:      #005255
 URxvt.color7:       #FF385A
 URxvt.color15:      #FF385A
 
-rofi.font: Source Code Variable Roman 9
+
+
