@@ -2,17 +2,17 @@
 [theme]
 name = "bad-wolf"
 [theme.overrides]
-idle_bg = "#8A2234"
+idle_bg = "#06A284"
 idle_fg = "#000000"
-info_bg = "#A6001C"
-info_fg = "#000000"
+info_bg = "#003229"
+info_fg = "#00EDBE"
 good_bg = "#000000"
-good_fg = "#FF0033"
-warning_bg = "#1A1E21"
-warning_fg = "#FF0015"
+good_fg = "#00FFCC"
+warning_bg = "#000000"
+warning_fg = "#00FFCE"
 critical_bg = "#D00426"
 critical_fg = "#000000"
-alternating_tint_bg = "#1A1E21"
+alternating_tint_bg = "#00FFCC"
 separator = ''
 [icons]
 name = "awesome"

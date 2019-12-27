@@ -46,9 +46,9 @@ cursor_blink = off
 #cursor = #dcdccc
 #cursor_foreground = #dcdccc
 
-foreground = #6D6F75
-foreground_bold = #F67E7D
-background = #1E2327
+foreground = #ffffff
+foreground_bold = #00FFCF
+background = #000000
 
 # 20% background transparency (requires a compositor)
 #background = rgba(63, 63, 63, 0.8)
@@ -57,22 +57,22 @@ background = #1E2327
 #highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0 = #5B5C63
-color1 = #FF405B
-color2 = #D0324C
+color0 = #115648
+color1 = #00EDBE
+color2 = #06A284
 color3 = #D7FF87
-color4 = #C00655
-color5 = #B444B4
+color4 = #005443
+color5 = #8947E0
 color6 = #3D96DB
-color7 = #FF385A
-color8 = #5B5C63
-color9 = #FF405B
-color10 = #D0324C
+color7 = #0F826C
+color8 = #115648
+color9 = #00EDBE
+color10 = #06A284
 color11 = #D7FF87
-color12 = #C00655
-color13 = #B444B4
+color12 = #005443
+color13 = #8947E0
 color14 = #3D96DB
-color15 = #FF385A
+color15 = #0F826C
 
 [hints]
 #font = Monospace 12

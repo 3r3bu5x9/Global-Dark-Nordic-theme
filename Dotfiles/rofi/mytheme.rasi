@@ -1,25 +1,27 @@
 /* global settings and color variables */
 * {
-   maincolor:        #D14F6B;
-   highlight:        bold #D14F6B;
-   urgentcolor:      #D14F6B;
+   maincolor:        #06A284;
+   highlight:        bold #00EDBE;
+   urgentcolor:      #00EDBE;
 
-   fgwhite:          #6D6F75;
-   blackdarkest:     rgba(30,35,39,50%);
-   blackwidget:      rgba(30,35,39,0%);
-   blackentry:       rgba(30,35,39,0%);
-   blackselect:      rgba(30,35,39,0%);
-   darkgray:         #7C2A38;
+   fgwhite:          #ffffff;
+   blackdarkest:     #000000;
+   blackwidget:      #000000;
+   blackentry:       #000000;
+   blackselect:      #000000;
+   darkgray:         #000000;
    scrollbarcolor:   #505050;
-   font: "Iosevka Regular 9";
+   font: "Iosevka Medium 10";
    background-color: @blackdarkest;
 }
 
 window {
    background-color: @blackdarkest;
-   anchor: north;
-   location: north;
-   y-offset: 30%;
+   anchor: center;
+   location: center;
+   y-offset: 0%;
+   width: 300;
+   padding: 10px;
    
 }
 
@@ -51,7 +53,7 @@ listview {
 }
 
 element {
-   padding: 5px 10px;
+   padding: 4px 10px;
 }
 
 element normal.normal {
@@ -72,7 +74,7 @@ element normal.active {
 
 element selected.normal {
     background-color: @blackselect;
-    text-color:       #DA2846;
+    text-color:       #048A71;
 }
 
 element selected.urgent {
@@ -82,7 +84,7 @@ element selected.urgent {
 
 element selected.active {
     background-color: @blackdarkest;
-    text-color:       #FF0033;
+    text-color:       #00EDBE;
 }
 
 element alternate.normal {
@@ -102,7 +104,7 @@ element alternate.active {
 
 scrollbar {
    background-color: @blackwidget;
-   handle-color: @darkgray;
+   handle-color: @blackdarkest;
    handle-width: 15px;
 }
 
@@ -126,15 +128,15 @@ inputbar {
 }
 
 prompt {
-   padding:6px 10px;
+   padding:0px 10px;
    background-color: @blackwidget;
-   text-color:#FF0033;
+   text-color: #00FFCF;
 }
 
 entry {
-   padding:6px 6px;
+   padding:0px 6px;
    background-color:@blackwidget;
-   text-color:#DA2846;
+   text-color:#ffffff;
 }
 
 case-indicator {
@@ -143,10 +145,10 @@ case-indicator {
    background-color:@blackwidget;
 }
 #textbox-prompt-colon {
-	padding:6px 0px;
+	padding:0px 0px;
     expand:     false;
     str:        "⎇";
     margin:     0px 0.3em 0em 0em ;
-    text-color: #FF0033;
+    text-color: #00FFCF;
     background-color:@blackwidget;
 }

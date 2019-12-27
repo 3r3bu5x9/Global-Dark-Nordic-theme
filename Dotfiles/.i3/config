@@ -2,7 +2,8 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 #programs
-
+bindsym $mod+p exec powermenu
+bindsym $mod+o exec scrotmenu
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
@@ -332,7 +333,7 @@ set_from_resource $term_color15    color15
 bar {
    # font pango:DejaVu Sans Mono, FontAwesome 12
 	font pango:Iosevka Medium 9
-#    position top
+    position top
 	i3bar_command i3bar -t
 #	i3bar_command i3bar
 	status_command /usr/bin/i3status-rs /home/debasis/.i3/status.toml
@@ -344,9 +345,9 @@ tray_output none
 #        background #1E2327
 	background $transparent
         statusline #D8DEE9
-        focused_workspace #F0294A #1E2327 #C16768
-        active_workspace #C16768 #C16768 #ffffff
-        inactive_workspace #C16768 #C16768 #1A1E21
+        focused_workspace #00FFCD #000000 #00FFCD
+        active_workspace #0C8B72 #0C8B72 #ffffff
+        inactive_workspace #06A284 #06A284 #000000
         urgent_workspace #2f343a #FF254F #ffffff
     }
 }
@@ -396,7 +397,7 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 12
+gaps inner 15
 gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
