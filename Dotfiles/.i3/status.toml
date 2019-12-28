@@ -1,18 +1,19 @@
 
 [theme]
-name = "bad-wolf"
+name = "gruvbox-light"
 [theme.overrides]
 idle_bg = "#06A284"
 idle_fg = "#000000"
 info_bg = "#003229"
 info_fg = "#00EDBE"
 good_bg = "#000000"
-good_fg = "#00FFCC"
-warning_bg = "#000000"
-warning_fg = "#00FFCE"
-critical_bg = "#D00426"
+good_fg = "#3AFFD8"
+warning_bg = "#2C78C4"
+warning_fg = "#000000"
+critical_bg = "#AE3C42"
 critical_fg = "#000000"
 alternating_tint_bg = "#00FFCC"
+
 separator = ''
 [icons]
 name = "awesome"
@@ -70,4 +71,3 @@ block = "uptime"
 block = "battery"
 interval = 10
 format = "{percentage}%"
-
