@@ -1,41 +1,37 @@
 
 [theme]
-name = "bad-wolf"
+name = "modern"
 [theme.overrides]
-idle_bg = "#06A284"
+idle_bg = "#333A47"
 idle_fg = "#000000"
-info_bg = "#003229"
-info_fg = "#00EDBE"
-good_bg = "#000000"
-good_fg = "#00FFCC"
-warning_bg = "#000000"
-warning_fg = "#00FFCE"
-critical_bg = "#D00426"
-critical_fg = "#000000"
-alternating_tint_bg = "#00FFCC"
-separator = ''
+info_bg = "#2E3440"
+info_fg = "#000000"
+good_bg = "#5E81AC"
+good_fg = "#000000"
+warning_bg = "#2E3440"
+warning_fg = "#81A1C1"
+critical_bg = "#2E3440"
+critical_fg = "#BF616A"
+alternating_tint_bg = "#333A47"
+separator = '🞀'
+#    
 [icons]
 name = "awesome"
+
+[[block]]
+block = "uptime"
+
 [[block]]
 block = "focused_window"
 max_width = 50
 
 [[block]]
 block = "net"
-ssid = true
-ip = true
 device = "enp3s0"
-speed_up = false
-speed_down = false
-[[block]]
-block = "disk_space"
-path = "/"
-alias = "⛁"
-info_type = "available"
-unit = "GB"
-interval = 20
-warning = 20.0
-alert = 10.0
+ssid = false
+ip = false
+speed_down = true
+interval = 1
 
 [[block]]
 block = "memory"
@@ -56,6 +52,7 @@ block = "time"
 interval = 1
 format = "%I:%M:%S %P"
 
+
 [[block]]
 block = "sound"
 
@@ -64,8 +61,7 @@ block = "xrandr"
 icons = true
 resolution = false
 interval = 2
-[[block]]
-block = "uptime"
+
 [[block]]
 block = "battery"
 interval = 10

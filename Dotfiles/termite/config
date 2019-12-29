@@ -6,7 +6,7 @@ allow_bold = true
 #cell_width_scale = 1.0
 #clickable_url = true
 #dynamic_title = true
-font = Iosevka Regular 9
+font = Iosevka Medium 9
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -43,12 +43,12 @@ cursor_blink = off
 [colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
-#cursor = #dcdccc
-#cursor_foreground = #dcdccc
+#cursor = #D8DEE9
+#cursor_foreground = #000000
 
-foreground = #ffffff
-foreground_bold = #00FFCF
-background = #000000
+foreground = #C9CFD9
+foreground_bold = #FFFFFF
+background = #2E3440
 
 # 20% background transparency (requires a compositor)
 #background = rgba(63, 63, 63, 0.8)
@@ -57,22 +57,40 @@ background = #000000
 #highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0 = #115648
-color1 = #00EDBE
-color2 = #06A284
-color3 = #D7FF87
-color4 = #005443
-color5 = #8947E0
-color6 = #3D96DB
-color7 = #0F826C
-color8 = #115648
-color9 = #00EDBE
-color10 = #06A284
-color11 = #D7FF87
-color12 = #005443
-color13 = #8947E0
-color14 = #3D96DB
-color15 = #0F826C
+[colors]
+
+# black
+color0  = #434C5E
+color8  = #4C566A
+
+# red
+color1  = #BF616A
+color9  = #BE6666
+
+# green
+color2  = #A5C18B
+color10 = #A5C18B
+
+# yellow
+color3  = #81A1C1
+color11 = #81A1C1
+
+# blue
+color4  = #5E81AC
+color12 = #5E81AC
+
+# magenta
+color5  = #B48EAD
+color13 = #B48EAD
+
+# cyan
+color6  = #88C0D0
+color14 = #8FBCBB
+
+# white
+color7  = #E5E9F0
+color15 = #D8DEE9
+
 
 [hints]
 #font = Monospace 12

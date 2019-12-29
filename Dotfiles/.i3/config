@@ -2,8 +2,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 #programs
-bindsym $mod+p exec powermenu
-bindsym $mod+o exec scrotmenu
+bindsym $mod+Shift+c` exec scrcpy
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
@@ -14,14 +13,14 @@ set $mod Mod4
 # window border
 for_window [class="^.*"] border pixel 0
 
-bindsym $mod+Shift+m exec i3-scrot
-
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 1
 default_floating_border normal
+#radius
+border_radius 3
 
 # Hide borders
-#hide_edge_borders both
+hide_edge_borders none
 # change borders
 bindsym $mod+u border none
 bindsym $mod+y border pixel 1
@@ -34,7 +33,7 @@ font xft:Source Code Variable Medium 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -42,8 +41,8 @@ bindsym $mod+Shift+q kill
 
 
 # launch categorized menu
-#bindsym $mod+z exec --no-startup-id morc_menu
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+z exec --no-startup-id morc_menu
+bindsym $mod+d exec --no-startup-id dmenu_run
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
@@ -53,7 +52,6 @@ bindsym $mod+d exec --no-startup-id rofi -show run
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id pa-applet
 exec --no-startup-id pulseeffects --gapplication-service
-exec --no-startup-id mpd
 
 bindsym $mod+Ctrl+m exec pavucontrol
 
@@ -64,16 +62,16 @@ bindsym $mod+Ctrl+m exec pavucontrol
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec termite -e 'bmenu'
-bindsym $mod+F2 exec firefox
-bindsym $mod+F3 exec thunar
-bindsym $mod+F1 exec gedit
-#bindsym $mod+Shift+F3 exec pcmanfm_pkexec
+bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
+bindsym $mod+F2 exec chromium
+bindsym $mod+F3 exec pcmanfm
+bindsym $mod+F4 exec ranger
+bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
-bindsym $mod+t exec --no-startup-id pkill picom
-bindsym $mod+Ctrl+t exec --no-startup-id picom -b
+bindsym $mod+t exec --no-startup-id pkill compton
+bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-#bindsym Print exec --no-startup-id i3-scrot
+bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
@@ -111,17 +109,17 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+z split h;exec notify-send 'tile horizontally'
-bindsym $mod+x split v;exec notify-send 'tile vertically'
+bindsym $mod+Shift+v split h;exec notify-send 'tile horizontally'
+bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-#bindsym $mod+s layout stacking
-#bindsym $mod+w layout tabbed
-#bindsym $mod+e layout toggle split
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -130,7 +128,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # toggle sticky
-#bindsym $mod+Shift+s sticky toggle
+bindsym $mod+Shift+s sticky toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -201,19 +199,19 @@ for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="fpakman"] floating enable
-#for_window [class="Galculator"] floating enable border pixel 1
-#for_window [class="GParted"] floating enable border normal
+for_window [class="Galculator"] floating enable border pixel 1
+for_window [class="GParted"] floating enable border normal
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-settings"] floating enable
-#for_window [class="Lxappearance"] floating enable sticky enable border normal
+for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Manjaro-hello"] floating enable
 for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [title="MuseScore: Play Panel"] floating enable
-#for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
 for_window [title="About Pale Moon"] floating enable
-#for_window [class="Pamac-manager"] floating enable
+for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
@@ -282,17 +280,17 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-#exec --no-startup-id pamac-tray
+exec --no-startup-id pamac-tray
 #exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 #exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-#exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
@@ -328,67 +326,44 @@ set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-
-
 bar {
-   # font pango:DejaVu Sans Mono, FontAwesome 12
-	font pango:Iosevka Medium 9
-    position top
-	i3bar_command i3bar -t
-#	i3bar_command i3bar
-	status_command /usr/bin/i3status-rs /home/debasis/.i3/status.toml
-tray_output none
-	set $transparent #00000000
-    colors {
-	
-        separator #666666
-#        background #1E2327
-	background $transparent
-        statusline #D8DEE9
-        focused_workspace #00FFCD #000000 #00FFCD
-        active_workspace #0C8B72 #0C8B72 #ffffff
-        inactive_workspace #06A284 #06A284 #000000
-        urgent_workspace #2f343a #FF254F #ffffff
-    }
-}
+	i3bar_command i3bar
+	status_command i3status
+	position top
 
-#bar {
-#	status_command i3status
-#	position top
-
-# please set your primary output first. #Example: 'xrandr --output eDP1 --primary'
+## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
 
-#	bindsym button4 nop
-#	bindsym button5 nop
-#   font xft:Source Code Variable Bold 11
-#	strip_workspace_numbers yes
+	bindsym button4 nop
+	bindsym button5 nop
+#   font xft:Source Code Variable Medium 11
+	strip_workspace_numbers yes
 
-#   colors {
-#        background #2E3440
-#        statusline #2EB398
-#        separator  #1B1D24
+    colors {
+        background #1B1D24
+        statusline #2EB398
+        separator  #1B1D24
 
-    #                  border  backgr. text
-#        focused_workspace  #F9FAF9 #1E2327 #292F34
-#        active_workspace   #595B5B #353836 #FDF6E3
-#        inactive_workspace #595B5B #222D31 #EEE8D5
-#        binding_mode       #16A085 #2C2C2C #F9FAF9
-#        urgent_workspace   #16A085 #FDF6E3 #E5201D
- #   }
-#}
+#                      border  backgr. text
+        focused_workspace  #F9FAF9 #16a085 #292F34
+        active_workspace   #595B5B #353836 #FDF6E3
+        inactive_workspace #595B5B #222D31 #EEE8D5
+        binding_mode       #16a085 #2C2C2C #F9FAF9
+        urgent_workspace   #16a085 #FDF6E3 #E5201D
+    }
+}
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #556064 #99A1C9 #80FFF9 #FDF6E3
-  client.focused_inactive #2F3D44 #637B94 #1ABC9C #454948
-  client.unfocused        #2F3D44 #637B94 #1ABC9C #454948
+  client.focused          #556064 #556064 #80FFF9 #FDF6E3
+  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #FFFFFF #000000 
+  client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
   client.background       #2B2C2B
 
@@ -397,8 +372,8 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 15
-gaps outer 0
+gaps inner 8
+gaps outer 2
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
@@ -410,7 +385,7 @@ gaps outer 0
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders no_gaps
+smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner

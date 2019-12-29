@@ -4,14 +4,14 @@
 /*fg : #663AB7;*/
 
 /* New Tab Flash */
-:root{--newtab-textbox-background-color:#000000;}
+:root{--newtab-textbox-background-color:#2E3440;}
 
 #browser vbox#appcontent tabbrowser,
 #content, 
 #tabbrowser-tabpanels,
 browser[type=content-primary],
 browser[type=content] > html{
-    background: #000000 !important
+    background: #2E3440 !important
 }
 
 .tab-line {
@@ -20,8 +20,8 @@ display : none !important;
 
 /* Toolbar buttons */
 .toolbarbutton-1 {
-    fill: #06A284 !important;
-    background-color: #000000 !important;
+    fill: #88C0D0 !important;
+    background-color: #2E3440 !important;
 }
 
 /* Remove border under navbar */
@@ -39,7 +39,7 @@ display : none !important;
 }
 
 #tabbrowser-tabs {
-background-color: #000000 !important;
+background-color: #2E3440 !important;
 }
 
 /*
@@ -80,21 +80,21 @@ background-color: #000000 !important;
 }
 tab
 {
-    background-color: #000000 !important;
+    background-color: #2E3440 !important;
     font-weight: thin !important;
-    color : #06A284 !important;
+    color : #88C0D0 !important;
 }
 
 
 .tab-content[selected="true"]
 {
-    background-color: #000000 !important;
+    background-color: #2E3440 !important;
     font-weight: bold !important;
-    color : #06A284 !important;
+    color : #88C0D0 !important;
 }
 
 #nav-bar-customization-target {
-	background-color: #000000 !important;
+	background-color: #2E3440 !important;
 }
 
 
@@ -104,10 +104,10 @@ tab
 
 #urlbar{
 	box-shadow: none !important;
-	background-color: #000000 !important;
+	background-color: #2E3440 !important;
 	background: none !important;
 	border: none !important;
-	color : #06A284 !important;
+	color : #88C0D0 !important;
 	font-weight: bold !important;
 }
 
@@ -151,3 +151,5 @@ toolbarbutton.scrollbutton-down{ background-color: transparent !important;}
 }
 
 /*#navigator-toolbox { --tabs-border-color: transparent !important; }*//* remove weird line*/
+
+

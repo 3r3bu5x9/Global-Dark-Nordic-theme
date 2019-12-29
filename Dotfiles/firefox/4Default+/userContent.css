@@ -1,10 +1,10 @@
   @-moz-document url("about:home"),url(about:preferences),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
-  body{color:#e1e1e1!important;background-color:#000000!important;--newtab-search-icon: transparent !important;}
-  a,a:visited,a:hover{color:#000000!important}
+  body{color:#2E3440!important;background-color:#2E3440!important;--newtab-search-icon: transparent !important;}
+  a,a:visited,a:hover{color:#2E3440!important}
 	#newtab-search-text {
-	background-color: #000000 !important;
+	background-color: #2E3440 !important;
 	font-size: 18px !important;
-	color: #06A284 !important;
+	color: #88C0D0 !important;
 	box-shadow: none !important;
 	text-align: center !important;
 	border:none !important;
@@ -32,10 +32,10 @@
 
 .search-button{background:none !important;}
 
-.prefs-button button {fill: #06A284 !important;}
+.prefs-button button {fill: #88C0D0 !important;}
   
 .prefs-button button:hover, .prefs-button button:focus {
-    background-color:  #000000 !important; }	
+    background-color:  transparent !important; }	
  
  .contentSearchSuggestionTable {display: none !important;}
  
@@ -43,7 +43,7 @@
 }
 :root {
 	
-    --in-content-border-active: #06A284 !important;
+    --in-content-border-active: #88C0D0 !important;
     --in-content-border-active-shadow: none !important;
-    --in-content-page-background: transparent !important;
+    --in-content-page-background: #2E3440 !important;
 }
