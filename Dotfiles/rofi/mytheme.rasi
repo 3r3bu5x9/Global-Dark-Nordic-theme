@@ -1,28 +1,29 @@
 /* global settings and color variables */
 * {
-   maincolor:        #06A284;
-   highlight:        bold #00EDBE;
-   urgentcolor:      #00EDBE;
+   maincolor:        #8FBCBB;
+   highlight:        bold #88C0D0;
+   urgentcolor:      #88C0D0;
 
-   fgwhite:          #ffffff;
-   blackdarkest:     #000000;
-   blackwidget:      #000000;
-   blackentry:       #000000;
-   blackselect:      #000000;
-   darkgray:         #000000;
-   scrollbarcolor:   #505050;
-   font: "Iosevka Medium 10";
+   fgwhite:          #5E81AC;
+   blackdarkest:     #2E3440;
+   blackwidget:      #2E3440;
+   blackentry:       #2E3440;
+   blackselect:      #2E3440;
+   darkgray:         #2E3440;
+   scrollbarcolor:   #2E3440;
+   font: "Iosevka Medium 9";
    background-color: @blackdarkest;
 }
 
 window {
    background-color: @blackdarkest;
-   anchor: center;
-   location: center;
-   y-offset: 0%;
+   anchor: north west;
+   location: north west;
+   y-offset: 5%;
+   x-offset: 1.5%;
    width: 300;
    padding: 10px;
-   
+   border-radius: 5px;
 }
 
 mainbox {
@@ -74,7 +75,7 @@ element normal.active {
 
 element selected.normal {
     background-color: @blackselect;
-    text-color:       #048A71;
+    text-color:       #88C0D0;
 }
 
 element selected.urgent {
@@ -84,7 +85,7 @@ element selected.urgent {
 
 element selected.active {
     background-color: @blackdarkest;
-    text-color:       #00EDBE;
+    text-color:       #A3BE8C;
 }
 
 element alternate.normal {
@@ -130,13 +131,13 @@ inputbar {
 prompt {
    padding:0px 10px;
    background-color: @blackwidget;
-   text-color: #00FFCF;
+   text-color: #8FBCBB;
 }
 
 entry {
    padding:0px 6px;
    background-color:@blackwidget;
-   text-color:#ffffff;
+   text-color:#D8DEE9;
 }
 
 case-indicator {
@@ -147,8 +148,8 @@ case-indicator {
 #textbox-prompt-colon {
 	padding:0px 0px;
     expand:     false;
-    str:        "⎇";
+    str:        ":";
     margin:     0px 0.3em 0em 0em ;
-    text-color: #00FFCF;
+    text-color: #8FBCBB;
     background-color:@blackwidget;
 }
