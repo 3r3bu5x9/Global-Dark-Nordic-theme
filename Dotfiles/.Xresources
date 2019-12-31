@@ -1,68 +1,37 @@
-!xrdb -merge ~/.Xresources!
-
-
-
-! Font options - ~/.fonts.conf seems to override this
-! Resolution for Xft in dots per inch (e.g. 96)
-Xft.dpi:       96
-! Type of subpixel antialiasing (none, rgb, bgr, vrgb or vbgr)
-Xft.rgba:      rgba
-Xft.antialias: 1
-!Xft.hinting:   1
-!Xft.autohint:  0
-! What degree of hinting to use (hintnone, hintslight, hintmedium, or hintfull)
-!Xft.hintstyle: hintslight
-
-
-!SCrollbar!
-!URxvt.background      : #1E2327!
-URxvt.scrollBar: false
-URxvt.internalBorder:10
-URxvt.transparent: false 
-URxvt.shading:20
-!font!
-URxvt.font:xft:Source Code Variable:Medium:size=9:antialias=true
-URxvt.boldFont: xft:Source Code Variable:Bold:size=9:antialias=true
-URxvt.letterSpace: -1
-
-! special
-URxvt.foreground      : #FCB6B6
-URxvt.foreground_bold : #F67E7D
-URxvt.cursorColor     : #FD4540
-URxvt.background      : #1E2327
-
-! black
-URxvt.color0:       #FCB6B6
-! terminal font
-URxvt.color8:       #FCB6B6
-
-! red
-URxvt.color1:       #FF405B
-URxvt.color9:       #FF405B
-
-! green
-URxvt.color2  : #D0324C
-URxvt.color10 : #D0324C
-
-! yellow
-URxvt.color3:       #FEBB21
-URxvt.color11:      #FEBB21
-
-! blue
-URxvt.color4:       #005255
-URxvt.color12:      #005255
-
-! magenta
-URxvt.color5:       #B444B4
-URxvt.color13:      #B444B4
-
-! cyan
-URxvt.color6:       #005255
-URxvt.color14:      #005255
-
-! white
-URxvt.color7:       #FF385A
-URxvt.color15:      #FF385A
-
-
-
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
