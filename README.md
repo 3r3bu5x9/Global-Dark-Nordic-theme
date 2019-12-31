@@ -1,4 +1,5 @@
-# Nordic-Dark-Polar Theme
+# Global-Dark-Nordic theme
+
 This project aims to make a complete theme with the Nord (dark) color scheme which is both modern and minimal(also, this is my favourite color scheme).
 This will combine my creations and also creations of other people.
 
