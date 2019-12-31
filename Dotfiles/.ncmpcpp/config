@@ -2,7 +2,7 @@
 song_list_format = " $0%n $1• $8%t $R$0%a "
 song_columns_list_format = "(3)[]{}(85)[green]{t} (1)[blue]{a}"
 song_status_format = " $3%t $3 $3%a "
-playlist_display_mode = "columns" (classic/columns)
+playlist_display_mode = "classic" (classic/columns)
 
 # Now Playing ..
 now_playing_prefix = "$(cyan)$b"
@@ -16,14 +16,14 @@ playlist_disable_highlight_delay = "1"
 message_delay_time= "1"
 
 # Progress Bar ..
-progressbar_look = "━━─"
-progressbar_color = "green"
+progressbar_look = "━━⊙"
+progressbar_color = "black"
 progressbar_elapsed_color = "cyan"
 
 # Colors ..
 colors_enabled = "yes"
 empty_tag_color = "red"
-statusbar_color = "3"
+statusbar_color = "blue"
 state_line_color = "black"
 state_flags_color = "green" 
 header_window_color = "black"

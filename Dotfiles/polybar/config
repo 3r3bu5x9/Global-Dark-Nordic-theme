@@ -1,0 +1,316 @@
+;---------------------------------------
+;		COLORS
+;---------------------------------------
+
+[colors]
+nord0 = #2E3440
+nord1 = #66748E
+nord2 = #434C5E
+nord3 = #242933
+nord4 = #000000
+nord5 = #88C0D0
+nord6 = #ECEFF4
+nord7 = #88C0D0
+nord8 = #5E81AC
+nord9 = #D8DEE9
+nord10 = #5E81AC
+nord11 = #BF616A
+nord12 = #D08770
+nord13 = #EBCB8B
+nord14 = #81A1C1
+nord15 = #B5616A
+nord16 = #66748E
+
+;---------------------------------------
+;		GLOBAL
+;---------------------------------------
+
+
+[bar/nord]
+width = 1366
+height = 15
+bottom = false
+
+offset-x = 10
+offset-y = 10
+
+border-size = 2
+border-color = ${colors.nord3}
+
+background = ${colors.nord3}
+foreground = ${colors.nord5}
+
+
+;---------------------------------------
+;		FONTS
+;---------------------------------------
+
+font-0 = Iosevka:weight=medium:size=9;3
+;---------------------------------------
+;	     MODULES LAYOUT
+;---------------------------------------
+
+modules-left =run LeftArrow21 date RightArrow3 mpd LeftArrow2 
+modules-right = RightArrow1 xwindow LeftArrow3 memory LeftArrow1 pulseaudio xbacklight battery
+modules-center = workspaces 
+;---------------------------------------
+;	      BSPWM MODULE
+;---------------------------------------
+[module/memory]
+type = internal/memory
+; Seconds to sleep between updates
+; Default: 1
+interval = 3
+format = <label>
+label = ﬙ %gb_used%  
+format-foreground = ${colors.nord16}
+format-background = ${colors.nord3}
+format-padding = 1
+[module/cpu]
+type = internal/cpu 
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 1
+format = <label>
+label = 龍 %percentage%%
+format-foreground = ${colors.nord16}
+format-background = ${colors.nord3}
+format-padding = 1
+
+
+
+
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+;format-online = <icon-play> <icon-pause>  <label-song>
+format-online =   <icon-prev> <toggle> <icon-next>  <bar-progress>
+;alt icons = 
+format-online-background = ${colors.nord14}
+format-online-foreground = ${colors.nord4}
+format-online-padding = 2 
+icon-play = 
+icon-prev = 
+icon-next = 
+icon-pause = 
+;label-song-maxlen = 60
+;label-song-ellipsis = true
+bar-progress-width = 30
+bar-progress-indicator = ⊙
+bar-progress-fill = ━
+bar-progress-empty = ─
+label-offline = 🎜 mpd is offline
+;${colors.nord8},10,15
+;${colors.nord3}
+
+
+[module/workspaces]
+type = internal/xworkspaces
+pin-workspaces = true
+format = <label-state>
+label-active = %index%
+label-active-padding = 2
+label-occupied = %index%
+label-occupied-padding = 2
+label-urgent = %index%
+label-active-background = ${colors.nord3}
+label-occupied-foreground = ${colors.nord10}
+label-occupied-background = ${colors.nord3}
+
+;---------------------------------------
+
+
+[module/run]
+
+type = custom/menu
+expand-right = true
+
+menu-0-0 =  ﭾ Run 
+menu-0-0-exec = rofi -show run &
+menu-0-1 =   Scrot 
+menu-0-1-exec = scrotmenu &
+menu-0-2 =   Power
+menu-0-2-exec = powermenu &
+label-open =  Menu
+label-close =  Exit
+format-padding = 1
+label-separator = " "
+format-foreground = ${colors.nord4}
+format-background = ${colors.nord7}
+
+[module/RightArrow1]
+type = custom/text
+content = ""
+content-foreground = ${colors.nord3}
+content-background = ${colors.nord8}
+
+
+[module/RightArrow2]
+type = custom/text
+content = ""
+content-foreground = ${colors.nord1}
+content-background = ${colors.nord3}
+
+[module/LeftArrow1]
+type = custom/text
+content = ""
+content-foreground = ${colors.nord3}
+content-background = ${colors.nord1}
+
+[module/LeftArrow2]
+type = custom/text
+content = ""
+content-foreground = ${colors.nord14}
+content-background = ${colors.nord3}
+
+[module/LeftArrow21]
+type = custom/text
+content = ""
+content-foreground = ${colors.nord7}
+content-background = ${colors.nord3}
+
+[module/LeftArrow3]
+type = custom/text
+content = ""
+content-foreground = ${colors.nord8}
+content-background = ${colors.nord3}
+
+[module/RightArrow3]
+type = custom/text
+content = ""
+content-foreground = ${colors.nord3}
+content-background = ${colors.nord14}
+
+[module/Space]
+type = custom/text
+content = "  "
+content-foreground = ${colors.nord1}
+content-background = ${colors.nord1}
+;---------------------------------------
+;	   XWINDOW MODULE
+;---------------------------------------
+
+[module/xwindow]
+type = internal/xwindow
+
+format-foreground = ${colors.nord4}
+format-background = ${colors.nord8}
+format-padding = 1
+
+label = 类 %title% 
+label-maxlen = 50
+
+;---------------------------------------
+;	   XBACKLIGHT MODULE
+;---------------------------------------
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label>
+format-foreground = ${colors.nord4}
+format-background = ${colors.nord1}
+
+label = " %percentage%"
+
+;---------------------------------------
+;	   DATE MODULE
+;---------------------------------------
+
+[module/date]
+type = internal/date
+
+interval = 60
+
+date = %a %d
+
+time = %I:%M
+
+label =   %date%   %time%
+
+format-foreground = ${colors.nord16}
+format-background = ${colors.nord3}
+format-padding = 1
+date-alt = %A %d %B %Y
+time-alt = %I:%M:%S
+;---------------------------------------
+;	   VOLUME MODULE
+;---------------------------------------
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+; If not, uses default sink
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+
+; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; Default: true
+use-ui-max = true
+
+; Interval for volume increase/decrease (in percent points)
+; Default: 5
+interval = 5
+format-volume = <ramp-volume><label-volume>
+format-volume-foreground = ${colors.nord4}
+format-volume-background = ${colors.nord1}
+
+label-volume = "%percentage% "
+label-volume-foreground = ${colors.nord4}
+label-volume-background = ${colors.nord1}
+label-muted = "  mute "
+label-muted-foreground = ${colors.nord4}
+label-muted-background = ${colors.nord1}
+
+ramp-volume-0 = "  "
+ramp-volume-0-foreground = ${colors.nord4}
+ramp-volume-0-background = ${colors.nord1}
+ramp-volume-1 = "  "
+ramp-volume-1-foreground = ${colors.nord4}
+ramp-volume-1-background = ${colors.nord1}
+ramp-volume-2 = "  "
+ramp-volume-2-foreground = ${colors.nord4}
+ramp-volume-2-background = ${colors.nord1}
+ramp-volume-3 = "  "
+ramp-volume-3-foreground = ${colors.nord4}
+ramp-volume-3-background = ${colors.nord1}
+
+;---------------------------------------
+;	   BATTERY MODULE
+;---------------------------------------
+
+[module/battery]
+type = internal/battery
+
+battery = BAT0
+adapter = ADP1
+
+full-at = 99
+
+format-charging = <label-charging>
+format-charging-foreground = ${colors.nord4}
+format-charging-background = ${colors.nord1}
+
+format-full = <label-full>
+format-full-foreground = ${colors.nord4}
+format-full-background = ${colors.nord1}
+
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-foreground = ${colors.nord4}
+format-discharging-background = ${colors.nord1}
+
+label-charging = "  %percentage% "
+label-discharging ="%percentage% "
+label-discharging-foreground = ${colors.nord4}
+label-full = "  %percentage% "
+
+ramp-capacity-0 = " "
+ramp-capacity-0-foreground = ${colors.nord11}
+ramp-capacity-1 = " "
+ramp-capacity-1-foreground = ${colors.nord11}
+ramp-capacity-2 = " "
+ramp-capacity-3 = " "
+ramp-capacity-4 = " "
