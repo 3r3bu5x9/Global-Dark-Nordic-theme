@@ -10,8 +10,8 @@ To be updated soon...
 ## Previews
 ![1.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot1.png)
 ![2.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot2.png)
-![3.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot3.png)
-![4.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot4.png)
+![3.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot4.png)
+![4.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot3.png)
 
 
 ## License
