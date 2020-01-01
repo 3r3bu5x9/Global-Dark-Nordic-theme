@@ -1,14 +1,11 @@
 
 [theme]
-<<<<<<< HEAD
 name = "modern"
-=======
 name = "gruvbox-light"
->>>>>>> 6d22bce9693d8c226708521389530b81b7eab9d6
+
 [theme.overrides]
 idle_bg = "#333A47"
 idle_fg = "#000000"
-<<<<<<< HEAD
 info_bg = "#2E3440"
 info_fg = "#000000"
 good_bg = "#5E81AC"
@@ -20,7 +17,6 @@ critical_fg = "#BF616A"
 alternating_tint_bg = "#333A47"
 separator = '🞀'
 #    
-=======
 info_bg = "#003229"
 info_fg = "#00EDBE"
 good_bg = "#000000"
@@ -32,7 +28,7 @@ critical_fg = "#000000"
 alternating_tint_bg = "#00FFCC"
 
 separator = ''
->>>>>>> 6d22bce9693d8c226708521389530b81b7eab9d6
+
 [icons]
 name = "awesome"
 
