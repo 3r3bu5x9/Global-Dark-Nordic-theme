@@ -87,7 +87,8 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 ;format-online = <icon-play> <icon-pause>  <label-song>
-format-online =   <icon-prev> <toggle> <icon-next>  <bar-progress>
+;format-online =   <icon-prev> <toggle> <icon-next>  <bar-progress>
+format-online =   <icon-prev> <toggle> <icon-next>  <label-song>
 ;alt icons = 
 format-online-background = ${colors.nord14}
 format-online-foreground = ${colors.nord4}
@@ -96,15 +97,14 @@ icon-play = 
 icon-prev = 
 icon-next = 
 icon-pause = 
-;label-song-maxlen = 60
-;label-song-ellipsis = true
-bar-progress-width = 30
-bar-progress-indicator = ⊙
-bar-progress-fill = ━
-bar-progress-empty = ─
+label-song =  "%title% by %artist%"
+label-song-maxlen = 40
+label-song-ellipsis = true
+;bar-progress-width = 13
+;bar-progress-indicator = ⊙
+;bar-progress-fill = ━
+;bar-progress-empty = ─
 label-offline = 🎜 mpd is offline
-;${colors.nord8},10,15
-;${colors.nord3}
 
 
 [module/workspaces]
@@ -112,9 +112,9 @@ type = internal/xworkspaces
 pin-workspaces = true
 format = <label-state>
 label-active = %index%
-label-active-padding = 2
+label-active-padding = 1
 label-occupied = %index%
-label-occupied-padding = 2
+label-occupied-padding = 1
 label-urgent = %index%
 label-active-background = ${colors.nord3}
 label-occupied-foreground = ${colors.nord10}
