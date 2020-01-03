@@ -16,8 +16,8 @@ This will combine my creations and also creations of other people.
 ### Instructions
 ## Firefox
 * Set the preference *toolkit.legacyUserProfileCustomizations.stylesheets* to true in about:config.
-* Make a folder *Chrome* in ~/.mozzila/firefox/PROFILE/
-* Paste the files from Dark_Nordic/ in Chrome/.
+* Make a folder *chrome* in ~/.mozzila/firefox/PROFILE/
+* Paste the files from Dark_Nordic/ in chrome/.
 
 ## Others
 Copy the config files to their respective directories.
