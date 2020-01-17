@@ -5,7 +5,7 @@ This will combine my creations and also creations of other people.
 (Plz ignore messy configs)
 ### Themes for packages
 
-* [Firefox](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/firefox)
+* [Firefox](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/firefox) - CSS hacks tested on Firefox 73(dev)
 * [Tmux](https://github.com/arcticicestudio/nord-tmux) 
 * [Lightline and Airline](https://github.com/arcticicestudio/nord-vim) 
 * [Nord GTK theme](https://github.com/EliverLara/Nordic) 
