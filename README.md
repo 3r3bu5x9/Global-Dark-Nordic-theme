@@ -2,7 +2,7 @@
 
 This project aims to make a complete theme with the Nord (dark) color scheme which is both modern and minimal(also, this is my favourite color scheme).
 This will combine my creations and also creations of other people.
-
+(Plz ignore messy configs)
 ### Themes for packages
 
 * [Firefox](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/firefox)
@@ -29,8 +29,9 @@ Copy the config files to their respective directories.
 
 ![1.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot1.png)
 ![2.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot2.png)
-![3.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot3.png)
-
+![3.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/ff.png)
+![4.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/lxappterm.png)
+![5.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/editorfm.png)
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
