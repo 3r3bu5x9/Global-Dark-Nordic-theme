@@ -1,17 +1,14 @@
-@import "scrollbars.css";
-
-/*bg : #1E2327;*/
-/*fg : #663AB7;*/
+/*@import "scrollbars.css";*/
 
 /* New Tab Flash */
-:root{--newtab-textbox-background-color:#2E3440;}
+:root{--newtab-textbox-background-color:#263238;}
 
 #browser vbox#appcontent tabbrowser,
 #content, 
 #tabbrowser-tabpanels,
 browser[type=content-primary],
 browser[type=content] > html{
-    background: #2E3440 !important
+    background: #263238 !important
 }
 
 .tab-line {
@@ -20,8 +17,8 @@ display : none !important;
 
 /* Toolbar buttons */
 .toolbarbutton-1 {
-    fill: #88C0D0 !important;
-    background-color: #2E3440 !important;
+    fill: #81A1C1 !important;
+    background-color: #263238 !important;
 }
 
 /* Remove border under navbar */
@@ -39,19 +36,8 @@ display : none !important;
 }
 
 #tabbrowser-tabs {
-background-color: #2E3440 !important;
+background-color: #263238 !important;
 }
-
-/*
-.tabbrowser-arrowscrollbox {
-  border: none !important;
-  min-width: 10;
-}
-
-.tab-drop-indicator-box {
-  border: none !important;
-  min-width: 10;
-}*/
 
 /* remove lines */
 
@@ -61,17 +47,7 @@ background-color: #2E3440 !important;
 
 #nav-bar, #TabsToolbar {
   border: none !important;
- /* max-height: 32px !important;*/
-  /*margin-top: -2px;*/
 }
-
-/*#PersonalToolbar {
-  border: none !important;
-}
-*/
-/*#content-deck {
-  border: none !important;
-}*/
 
 .tabbrowser-tab::before, 
 .tabbrowser-tab::after{
@@ -80,21 +56,21 @@ background-color: #2E3440 !important;
 }
 tab
 {
-    background-color: #2E3440 !important;
+    background-color: #263238 !important;
     font-weight: thin !important;
-    color : #88C0D0 !important;
+    color : #81A1C1 !important;
 }
 
 
 .tab-content[selected="true"]
 {
-    background-color: #2E3440 !important;
+    background-color: #263238 !important;
     font-weight: bold !important;
-    color : #88C0D0 !important;
+    color : #81A1C1 !important;
 }
 
 #nav-bar-customization-target {
-	background-color: #2E3440 !important;
+	background-color: #263238 !important;
 }
 
 
@@ -104,10 +80,10 @@ tab
 
 #urlbar{
 	box-shadow: none !important;
-	background-color: #2E3440 !important;
+	background-color: #263238 !important;
 	background: none !important;
 	border: none !important;
-	color : #88C0D0 !important;
+	color : #81A1C1 !important;
 	font-weight: bold !important;
 }
 
@@ -149,7 +125,21 @@ toolbarbutton.scrollbutton-down{ background-color: transparent !important;}
   position: fixed;
   top: 0px;
 }
-
 /*#navigator-toolbox { --tabs-border-color: transparent !important; }*//* remove weird line*/
+
+
+
+/*Hide tabs bar if one tab is opened*/
+#tabbrowser-tabs, #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
+  min-height: 0 !important;
+}
+
+#tabbrowser-tabs tab[first-visible-tab="true"][last-visible-tab="true"] {
+  visibility: collapse !important;
+}
+
+#tabbrowser-tabs #tabs-newtab-button {
+  visibility: collapse !important;
+}
 
 
