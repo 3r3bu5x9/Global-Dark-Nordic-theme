@@ -5,10 +5,11 @@ This will combine my creations and also creations of other people.
 
 ### Themes for packages
 
-* [Firefox](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/firefox) 
+* [Firefox](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/firefox)
 * [Tmux](https://github.com/arcticicestudio/nord-tmux) 
 * [Lightline and Airline](https://github.com/arcticicestudio/nord-vim) 
 * [Nord GTK theme](https://github.com/EliverLara/Nordic) 
+* [Nord GTK theme(more)](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/Themes) - extract the adapta-mega-pack archive and use the Adapta-BlueGrey-Nokto theme to match the color scheme(there are looots of extra ones too).
 * [Polybar](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/polybar) 
 * [Termite](https://github.com/arcticicestudio/nord-termite)
 * [Xresources](https://github.com/arcticicestudio/nord-xresources)
