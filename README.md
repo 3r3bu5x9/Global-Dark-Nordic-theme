@@ -12,11 +12,13 @@ This will combine my creations and also creations of other people.
 * [Polybar](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/polybar) 
 * [Termite](https://github.com/arcticicestudio/nord-termite)
 * [Xresources](https://github.com/arcticicestudio/nord-xresources)
+* [Geany](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/nord.conf)
+
 
 ### Instructions
 ## Firefox
 * Set the preference *toolkit.legacyUserProfileCustomizations.stylesheets* to true in about:config.
-* Make a folder *chrome* in ~/.mozzila/firefox/PROFILE/
+* Make a folder *chrome* in ~/.mozilla/firefox/PROFILE/
 * Paste the files from Dark_Nordic/ in chrome/.
 
 ## Others
