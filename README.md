@@ -11,7 +11,7 @@ This will combine my creations and also creations of other people.
 * [Nord GTK theme](https://github.com/EliverLara/Nordic) 
 * [Nord GTK theme(more)](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/Themes) - extract the adapta-mega-pack archive and use the Adapta-BlueGrey-Nokto theme to match the color scheme(there are looots of extra ones too).
 * [Polybar1](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/polybar) - use a nerd font for the icons
-* [Polybar2](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/polybar) - use a nerd font for the icons
+* [Polybar2](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/polybar) - use a nerd font for the icons, [mpdfy](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/mpdfy) script for dunst notification on song change by clicking on music title and [gsimplecal](https://github.com/dmedvinsky/gsimplecal) for calendar spawn on clicking date.
 * [Termite](https://github.com/arcticicestudio/nord-termite)
 * [Xresources](https://github.com/arcticicestudio/nord-xresources)
 * [Geany](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/nord.conf)
