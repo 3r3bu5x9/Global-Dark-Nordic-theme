@@ -10,7 +10,8 @@ This will combine my creations and also creations of other people.
 * [Lightline and Airline](https://github.com/arcticicestudio/nord-vim) 
 * [Nord GTK theme](https://github.com/EliverLara/Nordic) 
 * [Nord GTK theme(more)](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/Themes) - extract the adapta-mega-pack archive and use the Adapta-BlueGrey-Nokto theme to match the color scheme(there are looots of extra ones too).
-* [Polybar](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/polybar) - use a nerd font for the icons
+* [Polybar1](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/polybar) - use a nerd font for the icons
+* [Polybar2](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/tree/master/Dotfiles/polybar) - use a nerd font for the icons
 * [Termite](https://github.com/arcticicestudio/nord-termite)
 * [Xresources](https://github.com/arcticicestudio/nord-xresources)
 * [Geany](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/nord.conf)
@@ -32,6 +33,7 @@ Copy the config files to their respective directories.
 ![3.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/ff.png)
 ![4.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/lxappterm.png)
 ![5.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/editorfm.png)
+![6.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot5.png)
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
