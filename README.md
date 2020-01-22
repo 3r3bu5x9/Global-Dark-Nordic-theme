@@ -32,7 +32,7 @@ Copy the config files to their respective directories.
 ![2.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot2.png)
 ![3.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/ff.png)
 ![4.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/lxappterm.png)
-![5.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/editorfm.png)
+![5.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot4.png)
 ![6.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot5.png)
 ### License
 
