@@ -1,0 +1,6 @@
+#!/bin/zsh
+mpd
+mpc load doom
+mpc repeat on
+mpc random on
+polybar nord

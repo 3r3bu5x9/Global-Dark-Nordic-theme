@@ -1,0 +1,2 @@
+#!/bin/bash
+notify-send "Now playing: " "$(mpc current)"
