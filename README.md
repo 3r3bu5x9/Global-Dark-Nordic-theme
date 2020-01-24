@@ -29,11 +29,11 @@ Copy the config files to their respective directories.
 ### Previews
 
 ![1.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot1.png)
+![6.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot5.png)
 ![2.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot2.png)
 ![3.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/ff.png)
 ![4.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/lxappterm.png)
 ![5.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot4.png)
-![6.](https://github.com/AnubisZ9/Global-Dark-Nordic-theme/blob/master/Dotfiles/previews/scrot5.png)
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
