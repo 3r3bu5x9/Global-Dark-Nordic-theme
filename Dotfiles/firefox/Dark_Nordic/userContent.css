@@ -1,5 +1,5 @@
   @-moz-document url("about:home"),url(about:preferences),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
-  body{color:#2E3440!important;background-color:#2E3440!important;--newtab-search-icon: transparent !important;}
+  body{background-color:#2E3440!important;--newtab-search-icon: transparent !important;}
   a,a:visited,a:hover{color:#2E3440!important}
 	#newtab-search-text {
 	background-color: #2E3440 !important;
